@@ -1,0 +1,270 @@
+
+body {
+font-family: monospace;
+ margin: 0;
+ padding: 0;
+
+}
+
+.top-menu b{
+  color: black;
+}
+
+.top-menu a{
+  color: black;
+}
+
+.top-menu{
+    top: 0;
+    height: 54px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    position: fixed;
+    align-items: center;
+}
+
+.blog {
+ padding: 0px;
+ margin: 0px;
+}
+
+.blog1 {
+ font-size: 18px;
+ font-family: 'Courier New', Courier, monospace;
+ color: black;
+ letter-spacing: 2px;
+ padding-left: 40px;
+ justify-content: left;
+ flex: 1;
+}
+
+
+.blog a{
+ text-decoration: none;
+}
+
+.blog a:visited{
+ color: black;
+}
+
+.altbaslik{
+ font-family: 'Courier New', Courier, monospace;
+ color: black;
+ letter-spacing: 2px;
+ padding-left: 40px;
+ justify-content: left;
+ flex: 1;
+}
+
+.buttoon{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  background-color: #000;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.blog2 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  word-spacing: 25px;
+  font-size: 18px;
+  padding-right: 70px;
+}
+
+.main-content{
+ width: 100%;
+ max-width: 100%;
+}
+
+.main-content img{
+ width: 100%;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+}
+
+.last-content{
+  
+  width: 100%;
+  max-width: 100%;
+}
+
+.footer{
+  background-color: #000;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  text-align: center !important;
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.footer-text{
+  color: #fff;
+}
+
+.footer-text a{
+  color: white;
+  cursor:pointer
+}
+
+
+.last-content img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.picture-container{
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.picture-container .thumbnail{
+  max-width: 100%;
+}
+
+.man-container{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.man-container .thumbnail{
+  width: 100%;
+}
+
+
+/* Textbox'ların ayarları */
+.input{
+  padding: 5px;
+  display: block;
+  text-align: start;
+  border: 1px solid #ccc;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  height: 30px;
+  width: 98%;
+}
+
+.contact-metin{
+  padding-left: 15px;
+  font-family: Verdana,sans-serif;
+}
+
+.buton{
+  border: none;
+  width: 351px;
+  height: 38.5px;
+  display: flex;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  color: #000!important;
+  background-color: rgb(241, 241, 241);
+}
+
+.right-menu:hover{
+  background-color: grey;
+}
+
+.top-menu b:hover{
+  background-color: 	#ccc;
+}
+
+.pic-box{
+ width: 25%;
+ display: flex;
+}
+
+h1{
+  margin: 0;
+}
+
+hr{
+  opacity: 0.3;
+}
+
+.about p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+.box{
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+}
+
+.blogg{
+  padding: 20px;
+  margin: 20px;
+}
+
+/* .blogg1{
+  margin-left: 80px;
+  background-color: red;
+}
+.blogg2{
+  margin-left: 180px;
+  background-color: yellow;
+}
+.blogg3{
+  margin-left: 210px;
+  background-color: green;
+}
+.blogg4{
+  position: inherit;
+  background-color: blue;
+} */
+
+
+
+
+/* Ekranı küçültmeye başlayınca divler daralır ve kötü gözükür bunu sağlıklı bir hale getirmek için 800px'e düştükten sonra divlerin alt alta gösterilmesi için ; */
+
+@media (max-width: 900px){
+ .top-menu {
+  flex-direction: column;
+ }
+ h1{
+  font-size: 15px;
+ }
+ a{
+  font-size: 15px;
+ }
+
+ .pic-box {
+  margin-top: 10px;
+  width: 50%;
+ }
+
+.man-container{
+  flex-direction: column;
+
+}
+}
+
+@media (max-width: 700px){
+  .pic-box {
+  width: 100%;
+ }
+}
+
